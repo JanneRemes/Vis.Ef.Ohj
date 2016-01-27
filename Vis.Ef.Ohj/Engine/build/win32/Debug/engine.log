@@ -1,0 +1,861 @@
+﻿Build started 20.1.2016 16:04:50.
+     1>Project "C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\engine.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\..\..\include\graphics\win32" /I"C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\..\..\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\engine.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\animation\AnimationTimeline.cpp ..\..\src\core\ElapsedTimer.cpp ..\..\src\core\FileStream.cpp ..\..\src\core\log.cpp ..\..\src\core\MemoryManager.cpp ..\..\src\core\Object.cpp ..\..\src\core\PropertySet.cpp ..\..\src\eastl\allocator.cpp ..\..\src\eastl\assert.cpp ..\..\src\eastl\fixed_pool.cpp ..\..\src\eastl\hashtable.cpp ..\..\src\eastl\red_black_tree.cpp ..\..\src\eastl\string.cpp ..\..\src\graphics\es_util.cpp ..\..\src\graphics\FrmInput.cpp ..\..\src\graphics\FrmResourceGLES.cpp ..\..\src\graphics\FrmShader.cpp ..\..\src\graphics\FrmUtils.cpp ..\..\src\graphics\FrmUtilsGLES.cpp ..\..\src\graphics\SpriteBatch.cpp ..\..\src\graphics\Texture.cpp ..\..\src\scene\Entity.cpp ..\..\src\slmath\float_util.cpp ..\..\src\slmath\intersect_util.cpp ..\..\src\slmath\mat4.cpp ..\..\src\slmath\quat.cpp ..\..\src\slmath\random.cpp ..\..\src\slmath\random_util.cpp ..\..\src\slmath\runtime_checks.cpp ..\..\src\slmath\slmath_lua.cpp ..\..\src\slmath\vec2.cpp ..\..\src\slmath\vec3.cpp ..\..\src\slmath\vec4.cpp ..\..\src\ticpp\ticpp.cpp ..\..\src\ticpp\tinystr.cpp ..\..\src\ticpp\tinyxml.cpp ..\..\src\ticpp\tinyxmlerror.cpp ..\..\src\ticpp\tinyxmlparser.cpp ..\..\src\win32\es_util_win32.cpp ..\..\src\win32\FrmNoise_Platform.cpp ..\..\src\win32\FrmPlatform.cpp ..\..\src\win32\FrmStdlib_Platform.cpp ..\..\src\win32\FrmUtils_Platform.cpp ..\..\src\win32\input_win32.cpp
+         input_win32.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         FrmUtils_Platform.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         FrmStdlib_Platform.cpp
+         FrmPlatform.cpp
+         FrmNoise_Platform.cpp
+         es_util_win32.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         tinyxmlparser.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         tinyxmlerror.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         tinyxml.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         tinystr.cpp
+         ticpp.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         vec4.cpp
+         vec3.cpp
+         vec2.cpp
+         slmath_lua.cpp
+         runtime_checks.cpp
+         random_util.cpp
+         random.cpp
+         quat.cpp
+         mat4.cpp
+         Generating Code...
+         Compiling...
+         intersect_util.cpp
+         float_util.cpp
+     1>c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\src\slmath\float_util.cpp(34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\src\slmath\float_util.cpp(34): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\src\slmath\float_util.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\src\slmath\float_util.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+         Entity.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         Texture.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         SpriteBatch.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         FrmUtilsGLES.cpp
+         FrmUtils.cpp
+         FrmShader.cpp
+         FrmResourceGLES.cpp
+         FrmInput.cpp
+         es_util.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         string.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         red_black_tree.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         hashtable.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         fixed_pool.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         assert.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         allocator.cpp
+         PropertySet.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(435): note: see previous definition of 'INT8_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(438): note: see previous definition of 'INT16_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(441): note: see previous definition of 'INT32_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(51): warning C4005: 'INT64_MIN': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(444): note: see previous definition of 'INT64_MIN'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(421): note: see previous definition of 'INT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(424): note: see previous definition of 'INT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(427): note: see previous definition of 'INT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(55): warning C4005: 'INT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(430): note: see previous definition of 'INT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(449): note: see previous definition of 'UINT8_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(452): note: see previous definition of 'UINT16_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(455): note: see previous definition of 'UINT32_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(59): warning C4005: 'UINT64_MAX': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(458): note: see previous definition of 'UINT64_MAX'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(117): warning C4005: 'INT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(373): note: see previous definition of 'INT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(118): warning C4005: 'INT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(379): note: see previous definition of 'INT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(119): warning C4005: 'INT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(385): note: see previous definition of 'INT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(120): warning C4005: 'INT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(391): note: see previous definition of 'INT64_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(122): warning C4005: 'UINT8_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(376): note: see previous definition of 'UINT8_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(123): warning C4005: 'UINT16_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(382): note: see previous definition of 'UINT16_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(124): warning C4005: 'UINT32_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(388): note: see previous definition of 'UINT32_C'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\stdint.h(125): warning C4005: 'UINT64_C': macro redefinition
+         c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\include\eabase\eabase.h(394): note: see previous definition of 'UINT64_C'
+         Object.cpp
+     1>c:\users\janivat\downloads\engine_2016_0113 (1)\engine_2016\engine\src\core\object.cpp(23): warning C4267: 'argument': conversion from 'size_t' to 'uint8_t', possible loss of data
+         MemoryManager.cpp
+         Generating Code...
+         Compiling...
+         log.cpp
+         FileStream.cpp
+         ElapsedTimer.cpp
+         AnimationTimeline.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\..\..\include\graphics\win32" /I"C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\..\..\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\engine.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\lua\lapi.c ..\..\src\lua\lauxlib.c ..\..\src\lua\lbaselib.c ..\..\src\lua\lbitlib.c ..\..\src\lua\lcode.c ..\..\src\lua\lcorolib.c ..\..\src\lua\lctype.c ..\..\src\lua\ldblib.c ..\..\src\lua\ldebug.c ..\..\src\lua\ldo.c ..\..\src\lua\ldump.c ..\..\src\lua\lfunc.c ..\..\src\lua\lgc.c ..\..\src\lua\linit.c ..\..\src\lua\liolib.c ..\..\src\lua\llex.c ..\..\src\lua\lmathlib.c ..\..\src\lua\lmem.c ..\..\src\lua\loadlib.c ..\..\src\lua\lobject.c ..\..\src\lua\lopcodes.c ..\..\src\lua\loslib.c ..\..\src\lua\lparser.c ..\..\src\lua\lstate.c ..\..\src\lua\lstring.c ..\..\src\lua\lstrlib.c ..\..\src\lua\ltable.c ..\..\src\lua\ltablib.c ..\..\src\lua\ltm.c ..\..\src\lua\lua.c ..\..\src\lua\luac.c ..\..\src\lua\lundump.c ..\..\src\lua\lvm.c ..\..\src\lua\lzio.c
+         lzio.c
+         lvm.c
+         lundump.c
+         luac.c
+         lua.c
+         ltm.c
+         ltablib.c
+         ltable.c
+         lstrlib.c
+         lstring.c
+         lstate.c
+         lparser.c
+         loslib.c
+         lopcodes.c
+         lobject.c
+         loadlib.c
+         lmem.c
+         lmathlib.c
+         llex.c
+         liolib.c
+         Generating Code...
+         Compiling...
+         linit.c
+         lgc.c
+         lfunc.c
+         ldump.c
+         ldo.c
+         ldebug.c
+         ldblib.c
+         lctype.c
+         lcorolib.c
+         lcode.c
+         lbitlib.c
+         lbaselib.c
+         lauxlib.c
+         lapi.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\Debug\engine.lib" /NOLOGO Debug\AnimationTimeline.obj
+         Debug\ElapsedTimer.obj
+         Debug\FileStream.obj
+         Debug\log.obj
+         Debug\MemoryManager.obj
+         Debug\Object.obj
+         Debug\PropertySet.obj
+         Debug\allocator.obj
+         Debug\assert.obj
+         Debug\fixed_pool.obj
+         Debug\hashtable.obj
+         Debug\red_black_tree.obj
+         Debug\string.obj
+         Debug\es_util.obj
+         Debug\FrmInput.obj
+         Debug\FrmResourceGLES.obj
+         Debug\FrmShader.obj
+         Debug\FrmUtils.obj
+         Debug\FrmUtilsGLES.obj
+         Debug\SpriteBatch.obj
+         Debug\Texture.obj
+         Debug\lapi.obj
+         Debug\lauxlib.obj
+         Debug\lbaselib.obj
+         Debug\lbitlib.obj
+         Debug\lcode.obj
+         Debug\lcorolib.obj
+         Debug\lctype.obj
+         Debug\ldblib.obj
+         Debug\ldebug.obj
+         Debug\ldo.obj
+         Debug\ldump.obj
+         Debug\lfunc.obj
+         Debug\lgc.obj
+         Debug\linit.obj
+         Debug\liolib.obj
+         Debug\llex.obj
+         Debug\lmathlib.obj
+         Debug\lmem.obj
+         Debug\loadlib.obj
+         Debug\lobject.obj
+         Debug\lopcodes.obj
+         Debug\loslib.obj
+         Debug\lparser.obj
+         Debug\lstate.obj
+         Debug\lstring.obj
+         Debug\lstrlib.obj
+         Debug\ltable.obj
+         Debug\ltablib.obj
+         Debug\ltm.obj
+         Debug\lua.obj
+         Debug\luac.obj
+         Debug\lundump.obj
+         Debug\lvm.obj
+         Debug\lzio.obj
+         Debug\Entity.obj
+         Debug\float_util.obj
+         Debug\intersect_util.obj
+         Debug\mat4.obj
+         Debug\quat.obj
+         Debug\random.obj
+         Debug\random_util.obj
+         Debug\runtime_checks.obj
+         Debug\slmath_lua.obj
+         Debug\vec2.obj
+         Debug\vec3.obj
+         Debug\vec4.obj
+         Debug\ticpp.obj
+         Debug\tinystr.obj
+         Debug\tinyxml.obj
+         Debug\tinyxmlerror.obj
+         Debug\tinyxmlparser.obj
+         Debug\es_util_win32.obj
+         Debug\FrmNoise_Platform.obj
+         Debug\FrmPlatform.obj
+         Debug\FrmStdlib_Platform.obj
+         Debug\FrmUtils_Platform.obj
+         Debug\input_win32.obj
+         engine.vcxproj -> C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\Debug\engine.lib
+     1>Done Building Project "C:\Users\JaniVat\Downloads\Engine_2016_0113 (1)\Engine_2016\Engine\build\win32\engine.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.97
